@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS Calculator, Iterator & Prime Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Advanced JavaScript Utilities</h1>
+    
+    <!-- Calculator Section -->
+    <section class="utility">
+        <h2>Basic Calculator</h2>
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="First Number">
+            <input type="number" id="num2" placeholder="Second Number">
+            <select id="operation">
+                <option value="" disabled selected>Select Operation</option>
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+            </select>
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <div id="calculator-result" class="result"></div>
+    </section>
+    
+    <!-- Square Iterator Section -->
+    <section class="utility">
+        <h2>Square Iterator</h2>
+        <button id="generate-squares-btn">Generate Squares</button>
+        <div id="squares-result" class="result"></div>
+    </section>
+    
+    <!-- Prime Generator Section -->
+    <section class="utility">
+        <h2>Prime Number Generator</h2>
+        <div class="input-group">
+            <input type="number" id="prime-limit" placeholder="Enter Limit for Primes">
+        </div>
+        <button id="generate-primes-btn">Generate Primes</button>
+        <div id="primes-result" class="result"></div>
+    </section>
+</div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
